@@ -1,0 +1,14 @@
+{
+  "name": "my-testing-from-scratch",
+  "version": "1.0.0",
+  "description": "learn , build and play with testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --require ./my-assertion-library.js"
+  },
+  "keywords": [
+    "test-all"
+  ],
+  "author": "nikhilkuyya@gmail.com",
+  "license": "MIT"
+}
