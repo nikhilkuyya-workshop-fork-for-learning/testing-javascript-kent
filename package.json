@@ -4,7 +4,9 @@
   "description": "learn , build and play with testing",
   "main": "index.js",
   "scripts": {
-    "test": "node --require ./my-assertion-library.js"
+    "test": "node --require ./my-assertion-library.js",
+    "lint": "eslint 0*"
+
   },
   "keywords": [
     "test-all"
