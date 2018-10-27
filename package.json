@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "node --require ./my-assertion-library.js",
-    "lint": "eslint 0*"
-
+    "lint": "eslint 0*/**"
   },
   "keywords": [
     "test-all"
   ],
   "author": "nikhilkuyya@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.8.0"
+  }
 }

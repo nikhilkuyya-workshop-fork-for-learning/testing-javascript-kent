@@ -1,5 +1,3 @@
-const resolve = Promise.resolve;
-
 const sum = (a, b) => a + b
 const sub = (a, b) => a - b
 const modsub = (a, b) => a - b > 0 ? a - b : b - a
@@ -15,7 +13,7 @@ const sumAsync = (a, b) => {
 const subAsync = (a, b) => {
     const fn = sub.bind(null, a, b)
     const gen = function* () {
-        return fn();
+        yield fn();
     }
     return new Promise(function (resolve) {
         setTimeout(resolve(gen().next().value), 1000)
