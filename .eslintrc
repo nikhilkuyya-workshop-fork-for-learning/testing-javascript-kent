@@ -7,7 +7,8 @@
         "expect": true
     },
     "extends": [
-        "eslint:recommended"
+        "eslint:recommended",
+        "eslint-config-prettier"
     ],
     "rules": {
         "no-console": "error"

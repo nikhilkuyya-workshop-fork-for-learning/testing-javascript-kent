@@ -4,8 +4,11 @@
   "description": "learn , build and play with testing",
   "main": "index.js",
   "scripts": {
-    "test": "node --require ./my-assertion-library.js",
-    "lint": "eslint 0*/**"
+    "mytest": "node --require ./01-fundamentals-testing/my-assertion-library.js",
+    "lint": "eslint \"**/*.+(js)\"",
+    "format": "npm run prettier -- --write ",
+    "prettier": "prettier \"**/*.+(js|json)\"",
+    "validate": "npm run lint && npm run prettier -- --list-different"
   },
   "keywords": [
     "test-all"
@@ -13,6 +16,8 @@
   "author": "nikhilkuyya@gmail.com",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.8.0"
+    "eslint": "^5.8.0",
+    "eslint-config-prettier": "^3.1.0",
+    "prettier": "^1.14.3"
   }
 }
