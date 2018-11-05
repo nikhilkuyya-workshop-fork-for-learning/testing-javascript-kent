@@ -1,3 +1,4 @@
+// @flow
 /* if we keep out of fashion formating : prettier wirte in fashion way.*/
 let x = 1
 
