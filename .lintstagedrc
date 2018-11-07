@@ -6,6 +6,9 @@
         "**/*.+(js|json)":[
             "prettier --write",
             "git add"
+        ],
+        "(/__tests__/.*|(\\.|/)(test|spec))\\.jsx?$":[
+            jest
         ]
     },
     "ignore":['**/dist/*']

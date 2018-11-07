@@ -1,4 +1,8 @@
 module.exports = {
   testEnvironment: 'jsdom',
-  verbose: true
+  verbose: true,
+  transformIgnorePatterns: ['/node_modules/', '/dist/', '/.vscode/'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest'
+  }
 }

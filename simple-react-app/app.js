@@ -3,6 +3,7 @@
 // using flowFixMe : React Hooks are supported by flow.
 //$FlowFixMe
 import React, { useState } from 'react'
+export default App
 
 function userName(initialName: string) {
   const [name, setName] = useState(initialName)
@@ -23,7 +24,7 @@ type AppProps = {
   lastname: string
 }
 
-export default function App(props: AppProps) {
+function App(props: AppProps) {
   return (
     <>
       <div>{userName(props.firstname)}</div>

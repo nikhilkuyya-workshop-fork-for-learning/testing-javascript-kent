@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render 1`] = `
+<div>
+  <input
+    name="name"
+    value="nikhil"
+  />
+  <p>
+    nikhil
+  </p>
+</div>
+`;
